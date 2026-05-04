@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product · Monoline</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white font-sans text-zinc-900 antialiased">
+  <header class="border-b border-zinc-200 bg-white">
+    <div class="mx-auto flex h-16 max-w-screen-xl items-center justify-between gap-4 px-4 md:px-6 lg:px-8">
+      <a href="home.html" class="flex items-center gap-2 text-base font-medium tracking-tight"><span class="h-5 w-5 rounded-md border border-zinc-900"></span><span>Monoline</span></a>
+      <nav class="hidden items-center justify-center gap-6 text-sm font-normal text-zinc-600 md:flex" aria-label="Main navigation"><a href="products.html" class="hover:text-zinc-900">New arrivals</a><a href="products.html" class="hover:text-zinc-900">Women</a><a href="products.html" class="hover:text-zinc-900">Men</a><a href="products.html" class="hover:text-zinc-900">Home</a></nav>
+      <a href="checkout.html" class="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-3 text-sm hover:bg-zinc-50" aria-label="Cart"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.5 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 7H6"/></svg><span class="hidden md:inline">Cart</span></a>
+    </div>
+    <nav class="flex gap-4 overflow-x-auto border-t border-zinc-200 px-4 py-3 text-sm text-zinc-600 md:hidden" aria-label="Mobile categories"><a href="products.html" class="shrink-0 hover:text-zinc-900">New arrivals</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Women</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Men</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Home</a></nav>
+  </header>
+
+  <main>
+    <section class="mx-auto grid max-w-screen-xl items-start gap-8 px-4 py-16 md:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
+      <div class="grid gap-4">
+        <div class="grid aspect-square place-items-center rounded-lg border border-zinc-200 bg-zinc-100 text-sm text-zinc-500">Product image</div>
+        <div class="grid grid-cols-4 gap-3">
+          <button type="button" class="aspect-square rounded-lg border border-zinc-200 bg-zinc-100" aria-label="View image one"></button>
+          <button type="button" class="aspect-square rounded-lg border border-zinc-200 bg-zinc-100" aria-label="View image two"></button>
+          <button type="button" class="aspect-square rounded-lg border border-zinc-200 bg-zinc-100" aria-label="View image three"></button>
+          <button type="button" class="aspect-square rounded-lg border border-zinc-200 bg-zinc-100" aria-label="View image four"></button>
+        </div>
+      </div>
+
+      <article class="grid gap-6">
+        <div class="flex items-center justify-between gap-4">
+          <span class="inline-flex h-7 items-center rounded-md border border-zinc-200 bg-white px-3 text-sm text-zinc-600">Apparel</span>
+          <span class="inline-flex h-7 items-center rounded-md border border-red-200 bg-white px-3 text-sm text-red-600">Limited stock</span>
+        </div>
+        <div class="grid gap-4">
+          <h1 class="text-2xl font-medium leading-tight tracking-tight">Linen overshirt</h1>
+          <p class="text-base font-normal leading-relaxed text-zinc-600">A relaxed overshirt cut from washed cotton linen with a clean collar, straight hem, and quiet utility pockets.</p>
+          <p class="text-base font-medium">$86</p>
+        </div>
+        <div class="grid gap-3">
+          <p class="text-sm font-medium">Color</p>
+          <div class="flex flex-wrap gap-2"><button class="h-9 w-9 rounded-md border border-zinc-200 bg-zinc-900" aria-label="Black"></button><button class="h-9 w-9 rounded-md border border-zinc-200 bg-stone-200" aria-label="Stone"></button><button class="h-9 w-9 rounded-md border border-zinc-200 bg-white" aria-label="White"></button></div>
+        </div>
+        <div class="grid gap-3">
+          <p class="text-sm font-medium">Size</p>
+          <div class="flex flex-wrap gap-2"><button class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-200 bg-white px-3 text-sm hover:bg-zinc-50">S</button><button class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-900 bg-zinc-900 px-3 text-sm text-zinc-50">M</button><button class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-200 bg-white px-3 text-sm hover:bg-zinc-50">L</button><button class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-200 bg-white px-3 text-sm hover:bg-zinc-50">XL</button></div>
+        </div>
+        <a href="checkout.html" class="inline-flex h-10 w-full items-center justify-center rounded-md border border-zinc-900 bg-zinc-900 px-4 text-sm font-medium text-zinc-50 hover:bg-zinc-800">Add to cart</a>
+        <div class="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+          <table class="w-full border-collapse text-sm">
+            <tbody>
+              <tr class="border-b border-zinc-200"><th class="w-1/2 p-4 text-left font-normal text-zinc-500">Material</th><td class="w-1/2 p-4">55% linen, 45% cotton</td></tr>
+              <tr class="border-b border-zinc-200"><th class="w-1/2 p-4 text-left font-normal text-zinc-500">Fit</th><td class="w-1/2 p-4">Relaxed, true to size</td></tr>
+              <tr class="border-b border-zinc-200"><th class="w-1/2 p-4 text-left font-normal text-zinc-500">Care</th><td class="w-1/2 p-4">Cold wash, line dry</td></tr>
+              <tr><th class="w-1/2 p-4 text-left font-normal text-zinc-500">Origin</th><td class="w-1/2 p-4">Made in Portugal</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="mx-auto max-w-screen-xl px-4 py-12 md:px-6 lg:px-8">
+      <div class="mb-6 flex items-end justify-between gap-4"><h2 class="text-lg font-medium">Related products</h2></div>
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+        <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">02</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Canvas tote</h3><p class="text-sm text-zinc-500">Bags</p><span class="text-sm font-medium">$48</span></div></a></article>
+        <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">03</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Ribbed tee</h3><p class="text-sm text-zinc-500">Apparel</p><span class="text-sm font-medium">$34</span></div></a></article>
+        <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">09</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Cotton trouser</h3><p class="text-sm text-zinc-500">Apparel</p><span class="text-sm font-medium">$92</span></div></a></article>
+        <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">05</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Wool cap</h3><p class="text-sm text-zinc-500">Apparel</p><span class="text-sm font-medium">$28</span></div></a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-200 bg-white"><div class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6 lg:px-8"><div class="grid gap-3"><h2 class="text-base font-medium">Monoline</h2><p class="text-sm leading-relaxed text-zinc-500">Minimal goods for everyday use, built around quiet details and clear function.</p></div><nav class="grid gap-3 text-sm text-zinc-600"><h2 class="text-base font-medium text-zinc-900">Shop</h2><a href="products.html" class="hover:text-zinc-900">New arrivals</a><a href="products.html" class="hover:text-zinc-900">Apparel</a><a href="products.html" class="hover:text-zinc-900">Home goods</a></nav><nav class="grid gap-3 text-sm text-zinc-600"><h2 class="text-base font-medium text-zinc-900">Support</h2><a href="#" class="hover:text-zinc-900">Shipping</a><a href="#" class="hover:text-zinc-900">Returns</a><a href="#" class="hover:text-zinc-900">Contact</a></nav></div></footer>
+</body>
+</html>

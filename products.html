@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products · Monoline</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white font-sans text-zinc-900 antialiased">
+  <header class="border-b border-zinc-200 bg-white">
+    <div class="mx-auto flex h-16 max-w-screen-xl items-center justify-between gap-4 px-4 md:px-6 lg:px-8">
+      <a href="home.html" class="flex items-center gap-2 text-base font-medium tracking-tight"><span class="h-5 w-5 rounded-md border border-zinc-900"></span><span>Monoline</span></a>
+      <nav class="hidden items-center justify-center gap-6 text-sm font-normal text-zinc-600 md:flex" aria-label="Main navigation"><a href="products.html" class="hover:text-zinc-900">New arrivals</a><a href="products.html" class="hover:text-zinc-900">Women</a><a href="products.html" class="hover:text-zinc-900">Men</a><a href="products.html" class="hover:text-zinc-900">Home</a></nav>
+      <a href="checkout.html" class="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-3 text-sm hover:bg-zinc-50" aria-label="Cart"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.5 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 7H6"/></svg><span class="hidden md:inline">Cart</span></a>
+    </div>
+    <nav class="flex gap-4 overflow-x-auto border-t border-zinc-200 px-4 py-3 text-sm text-zinc-600 md:hidden" aria-label="Mobile categories"><a href="products.html" class="shrink-0 hover:text-zinc-900">New arrivals</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Women</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Men</a><a href="products.html" class="shrink-0 hover:text-zinc-900">Home</a></nav>
+  </header>
+
+  <main>
+    <section class="border-b border-zinc-200 bg-white">
+      <div class="mx-auto flex max-w-screen-xl flex-col gap-3 px-4 py-12 md:flex-row md:items-end md:justify-between md:px-6 lg:px-8">
+        <div class="grid gap-2"><h1 class="text-2xl font-medium leading-tight tracking-tight">All products</h1><p class="text-sm text-zinc-500">12 products</p></div>
+        <button type="button" class="inline-flex h-10 w-fit items-center justify-center gap-2 rounded-md border border-zinc-200 bg-white px-4 text-sm font-medium hover:bg-zinc-50 lg:hidden"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16"/><path d="M7 12h10"/><path d="M10 18h4"/></svg>Filter</button>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-screen-xl gap-6 px-4 py-12 md:px-6 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-8 lg:px-8">
+      <aside class="hidden w-[220px] self-start rounded-lg border border-zinc-200 bg-white p-6 lg:block" aria-label="Product filters">
+        <h2 class="text-base font-medium">Filters</h2>
+        <div class="mt-6 grid gap-3 border-t border-zinc-200 pt-6">
+          <p class="text-sm font-medium">Category</p>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>Apparel</label>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>Bags</label>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>Home</label>
+        </div>
+        <div class="mt-6 grid gap-3 border-t border-zinc-200 pt-6">
+          <p class="text-sm font-medium">Price</p>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>Under $50</label>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>$50 to $100</label>
+          <label class="flex items-center gap-2 text-sm text-zinc-600"><span class="h-4 w-4 rounded-md border border-zinc-200"></span>Over $100</label>
+        </div>
+      </aside>
+
+      <div>
+        <div class="mb-6 flex items-center justify-between gap-4">
+          <p class="text-sm text-zinc-500">Showing 1 to 12</p>
+          <span class="inline-flex h-7 items-center rounded-md border border-zinc-200 bg-white px-3 text-sm text-zinc-600">Sort by newest</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-3">
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">01</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Linen overshirt</h3><p class="text-sm text-zinc-500">Apparel</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$86</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">New</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">02</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Canvas tote</h3><p class="text-sm text-zinc-500">Bags</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$48</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Core</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">03</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Ribbed tee</h3><p class="text-sm text-zinc-500">Apparel</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$34</span><span class="text-sm text-red-600">Sale</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">04</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Stone tray</h3><p class="text-sm text-zinc-500">Home</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$42</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Home</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">05</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Wool cap</h3><p class="text-sm text-zinc-500">Apparel</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$28</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Cold</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">06</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Cotton socks</h3><p class="text-sm text-zinc-500">Apparel</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$18</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Set</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">07</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Desk bowl</h3><p class="text-sm text-zinc-500">Objects</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$36</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Gift</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">08</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Daily notebook</h3><p class="text-sm text-zinc-500">Paper</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$24</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Paper</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">09</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Cotton trouser</h3><p class="text-sm text-zinc-500">Apparel</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$92</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Core</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">10</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Market bag</h3><p class="text-sm text-zinc-500">Bags</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$56</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Carry</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">11</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Glass cup</h3><p class="text-sm text-zinc-500">Home</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$22</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Clear</span></div></div></a></article>
+          <article class="overflow-hidden rounded-lg border border-zinc-200 bg-white"><a href="product.html"><div class="grid aspect-square place-items-center border-b border-zinc-200 bg-zinc-100 text-sm text-zinc-500">12</div><div class="grid gap-2 p-6"><h3 class="text-base font-medium">Waffle towel</h3><p class="text-sm text-zinc-500">Home</p><div class="flex items-center justify-between gap-3"><span class="text-sm font-medium">$40</span><span class="rounded-md border border-zinc-200 px-3 py-1 text-sm text-zinc-600">Soft</span></div></div></a></article>
+        </div>
+        <nav class="mt-8 flex items-center justify-center gap-2" aria-label="Pagination"><a class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-900 bg-zinc-900 px-3 text-sm text-zinc-50" href="#">1</a><a class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-200 px-3 text-sm hover:bg-zinc-50" href="#">2</a><a class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-zinc-200 px-3 text-sm hover:bg-zinc-50" href="#">3</a><a class="inline-flex h-9 items-center justify-center rounded-md border border-zinc-200 px-3 text-sm hover:bg-zinc-50" href="#">Next</a></nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-200 bg-white"><div class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6 lg:px-8"><div class="grid gap-3"><h2 class="text-base font-medium">Monoline</h2><p class="text-sm leading-relaxed text-zinc-500">Minimal goods for everyday use, built around quiet details and clear function.</p></div><nav class="grid gap-3 text-sm text-zinc-600"><h2 class="text-base font-medium text-zinc-900">Shop</h2><a href="products.html" class="hover:text-zinc-900">New arrivals</a><a href="products.html" class="hover:text-zinc-900">Apparel</a><a href="products.html" class="hover:text-zinc-900">Home goods</a></nav><nav class="grid gap-3 text-sm text-zinc-600"><h2 class="text-base font-medium text-zinc-900">Support</h2><a href="#" class="hover:text-zinc-900">Shipping</a><a href="#" class="hover:text-zinc-900">Returns</a><a href="#" class="hover:text-zinc-900">Contact</a></nav></div></footer>
+</body>
+</html>
