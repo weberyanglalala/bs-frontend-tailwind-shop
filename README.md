@@ -1,20 +1,20 @@
-# bs-frontend-tailwind-shop
+# vue-tailwind-shop
 
-Public pages:
+Monorepo setup:
 
-- Home: https://weberyanglalala.github.io/bs-frontend-tailwind-shop/home.html
-- Products: https://weberyanglalala.github.io/bs-frontend-tailwind-shop/products.html
-- Product detail: https://weberyanglalala.github.io/bs-frontend-tailwind-shop/product.html
-- Checkout: https://weberyanglalala.github.io/bs-frontend-tailwind-shop/checkout.html
+- App: `apps/web`
+- Stack: Vue 3 + TypeScript + Vite + Vue Router
 
-Entry page:
+Run it:
 
-- Index: https://weberyanglalala.github.io/bs-frontend-tailwind-shop/index.html
+```bash
+pnpm install
+pnpm dev
+```
 
-Local files:
+Routes:
 
-- [index.html](index.html)
-- [home.html](home.html)
-- [products.html](products.html)
-- [product.html](product.html)
-- [checkout.html](checkout.html)
+- `#/home`
+- `#/products`
+- `#/product`
+- `#/checkout`
